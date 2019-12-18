@@ -131,10 +131,3 @@ def get_client():
         return storage.Client(credentials=credentials)
  
 
-
-
-if __name__ == '__main__':
-    #SIMULATE DIALOGFLOW
-    request = {"responseId": "NO", "queryResult": {"queryText": "read anger", "parameters": {"any": "seduce"}, "allRequiredParamsPresent": True, "intent": {"name": "projects/read-agent/agent/intents/NO", "displayName": "choose_audiobook"}, "intentDetectionConfidence": 0.91, "languageCode": "en"}, "originalDetectIntentRequest": {"payload": {} }, "session": "projects/read-agent/agent/sessions/NO"} 
-    print(lambda_handler(request))
- ```
